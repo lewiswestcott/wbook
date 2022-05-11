@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+.secondary {
+    font-family: 'Fira Mono', monospace!important;
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 0;
+    color: #084c61;
+
+
+}
+
+.tri {
+    font-family: 'Fira Mono', monospace!important;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    color: #084c61;
+
+
+}
+.navbartext {
+    font-family: 'Unna', serif !important;
+    font-size: 3.5em;
+    color: #084c61;
+
+}
+
+body {
+        background: linear-gradient(-45deg, #F2D2BD, #E5D2C4, #CCB3A3, #B5948D);
+        background-size: 400% 400%;
+        animation: gradient 1s ease infinite;
+        height: 100vh;
+}
+
+.loginbutton {
+    color: white !important;
+    background-color: #084c61 !important;
+    font-size: 1.5rem;
+    border: 2px !important;
+}
+
+.loginbutton:hover {
+    color: #084c61 !important;
+    background-color: white !important;
+}
+
+.maintext {
+    font-family: 'Unna', serif !important;
+    font-size: 5em;
+    color: #084c61;
+
+}
+
