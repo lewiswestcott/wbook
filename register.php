@@ -43,15 +43,33 @@
                 <div class="col-7 ">
                     <div class="card mb-2 ">
                         <div class="card-body">
-                            <p class="tri">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nostrum qui laboriosam ipsa doloremque dolorum odio, neque vitae exercitationem sint velit temporibus maxime dicta magni iusto enim eligendi ipsam adipisci.</p>
+                            <p class="tri">Welcome! We are glad that you're here! Fill in the fields below and we'll create your account.</p>
                         </div>
 
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <form action="login.php" method="post">
+                            <form action="./php/registeruser.php" method="post">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="first">
+                                            <p class="secondary mx-1">First Name</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="first" placeholder="First Name">
+
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="last">
+                                            <p class="secondary mx-1">Last Name</p>
+                                        </label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="last" placeholder="Last Name">
+
+                                    </div>
+                                </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">
+                                    <label for="email">
                                         <p class="secondary mx-1">Email address</p>
                                     </label>
                                     <input type="email" class="form-control" id="exampleInputEmail1"
@@ -67,13 +85,10 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-6">
-                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100">Login</button>
+                                    <div class="col-6 mx-auto">
+                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100">Enter!</button>
                                     </div>
-                                    <div class="col-6">
-                                        <button type="submit" href="./register.php" class="btn-lg loginbutton mt-3 w-100">New Here?
-                                            Register</button>
-                                    </div>
+                                    
                                 </div>
                         </div>
 
