@@ -45,7 +45,7 @@
                         <div class="card-body">
                             <p class="tri">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nostrum qui laboriosam ipsa doloremque dolorum odio, neque vitae exercitationem sint velit temporibus maxime dicta magni iusto enim eligendi ipsam adipisci.</p>
                         </div>
-
+ 
                     </div>
                     <div class="card">
                         <div class="card-body">
@@ -71,8 +71,8 @@
                                         <button type="submit" class="btn-lg loginbutton mt-3 w-100">Login</button>
                                     </div>
                                     <div class="col-6">
-                                        <button type="submit" href="./register.php" class="btn-lg loginbutton mt-3 w-100">New Here?
-                                            Register</button>
+                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100"><p href="./register.php">New Here?
+                                            Register</p></button>
                                     </div>
                                 </div>
                         </div>
