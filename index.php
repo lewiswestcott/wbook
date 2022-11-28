@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -53,13 +51,13 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <form action="./res/php/registeruser.php" method="post" id>
+                            <form action="./res/php/registeruser.php" method="post">
                                 <div class="row">
                                     <div class="form-group col-6">
                                         <label for="first">
                                             <p class="secondary mx-1">First Name</p>
                                         </label>
-                                        <input type="text" name="first" class="form-control" id="first"
+                                        <input type="text" class="form-control" id="first"
                                             aria-describedby="first" placeholder="First Name">
 
                                     </div>
@@ -67,7 +65,7 @@
                                         <label for="last">
                                             <p class="secondary mx-1">Last Name</p>
                                         </label>
-                                        <input type="text" class="form-control" name="last" id="last"
+                                        <input type="text" class="form-control" id="last"
                                             aria-describedby="last" placeholder="Last Name">
 
                                     </div>
@@ -76,7 +74,7 @@
                                     <label for="email">
                                         <p class="secondary mx-1">Email address</p>
                                     </label>
-                                    <input type="email" class="form-control" name="email" id="email"
+                                    <input type="email" class="form-control" id="email"
                                         aria-describedby="emailHelp" placeholder="Enter email">
 
                                 </div>
@@ -84,13 +82,13 @@
                                     <label for="password">
                                         <p class="secondary mx-1">Password</p>
                                     </label>
-                                    <input type="password" class="form-control" name="password" id="password"
+                                    <input type="password" class="form-control" id="password"
                                         placeholder="Password">
                                 </div>
 
                                 <div class="row">
                                     <div class="col-6 mx-auto">
-                                        <button type="submit"  class="btn-lg loginbutton mt-3 w-100">Enter!</button>
+                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100">Enter!</button>
                                     </div>
                                     
                                 </div>
@@ -113,8 +111,6 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        
-        
         </script>
 
 
