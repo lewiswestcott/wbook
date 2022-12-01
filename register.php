@@ -73,6 +73,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="DOB">
+                                        <p class="secondary mx-1">Date of Birth</p>
+                                    </label>
+                                    <input type="date" class="form-control" name="dob" id="dob"
+                                        aria-describedby="Date of Birth" placeholder="Enter Date of Birth">
+
+                                </div>
+                                <div class="form-group">
                                     <label for="email">
                                         <p class="secondary mx-1">Email address</p>
                                     </label>
