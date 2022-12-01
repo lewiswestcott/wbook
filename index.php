@@ -9,6 +9,8 @@
         header("Location: ./login.php");
     }
 
+    require("./res/php/connect.php");
+
 ?>
 
 <!doctype html>
@@ -84,22 +86,29 @@
                             </div>
                         </form>
                     </div>
-                    <div class="card mx-1 mt-1">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/2.svg"
-                                    alt="Profile Pic" style="max-width:25px;" /> Lewis Westcott</h5>
-                            <p class="card-text">I think the functionality is excellent. I recieved no help whatsoever.</p>
-                            <p class="card-text"><small class="text-muted">Posted 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card mx-1 mt-1">
-                        <div class="card-body">
-                            <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/jackkimmins.svg"
-                                    alt="Profile Pic" style="max-width:25px;" /> Jack Kimmins</h5>
-                            <p class="card-text">I love fuckbook!!😀</p>
-                            <p class="card-text"><small class="text-muted">Posted 1 day ago</small></p>
-                        </div>
-                    </div>
+                    
+
+                    <?php
+                        $sql = "SELECT * FROM `posts` ORDER BY `posts`.`PID` DESC";
+                        $result = mysqli_query($connect, $sql);
+                        $resultCheck = mysqli_num_rows($result);
+                        if ($resultCheck > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                echo '<div class="card mx-1 mt-1">
+                                <div class="card-body">
+                                    <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/'.$_SESSION['UID'].'.svg"
+                                            alt="Profile Pic" style="max-width:25px;" /> '.$_SESSION['firstname'].' '.$_SESSION['lastname'].'</h5>
+                                    <p class="card-text">'.$row['post'].'</p>
+                                    <p class="card-text"><small class="text-muted">Post# '.$row['PID'].'</small></p>
+                                </div>
+                            </div>';
+                            }
+                        }
+
+
+
+
+                    ?>
 
                 </div>
 
