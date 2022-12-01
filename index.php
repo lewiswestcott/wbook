@@ -1,3 +1,5 @@
+<?php $profilepic="SELECT* FROM `users` WHERE `UID` = '2'"; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -15,7 +17,7 @@
 
     <title>wbook</title>
 
-    
+
 </head>
 
 <body class="body">
@@ -34,68 +36,21 @@
         </section>
 
         <section id="mainhomepage">
-            <div class="row ">
+            <div class="row">
 
+                <div class="col-3">
+                <img src="https://proficon.stablenetwork.uk/api/identicon/2.svg" alt="Profile Pic" />
 
-
-
-                <div class="col-5 ">
-                    <img src="./res/img/1.jpg" class="img-fluid" alt="a buidling">
                 </div>
-                <div class="col-7 ">
-                    <div class="card mb-2 ">
-                        <div class="card-body">
-                            <p class="tri">Welcome! We are glad that you're here! Fill in the fields below and we'll create your account.</p>
-                        </div>
 
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <form action="./res/php/registeruser.php" method="post">
-                                <div class="row">
-                                    <div class="form-group col-6">
-                                        <label for="first">
-                                            <p class="secondary mx-1">First Name</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="first"
-                                            aria-describedby="first" placeholder="First Name">
+                <div class="col-9">
 
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="last">
-                                            <p class="secondary mx-1">Last Name</p>
-                                        </label>
-                                        <input type="text" class="form-control" id="last"
-                                            aria-describedby="last" placeholder="Last Name">
-
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">
-                                        <p class="secondary mx-1">Email address</p>
-                                    </label>
-                                    <input type="email" class="form-control" id="email"
-                                        aria-describedby="emailHelp" placeholder="Enter email">
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">
-                                        <p class="secondary mx-1">Password</p>
-                                    </label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Password">
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-6 mx-auto">
-                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100">Enter!</button>
-                                    </div>
-                                    
-                                </div>
-                        </div>
-
-                    </div>
                 </div>
+
+
+
+
+            </div>
         </section>
 
         <footer>

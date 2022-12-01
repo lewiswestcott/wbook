@@ -29,10 +29,15 @@
 }
 
 body {
-        background: linear-gradient(-45deg, #F2D2BD, #E5D2C4, #CCB3A3, #B5948D);
+        background-color: #B5948D;
+        /* background: linear-gradient(-45deg, #F2D2BD, #E5D2C4, #CCB3A3, #B5948D); */
         background-size: 400% 400%;
-        animation: gradient 1s ease infinite;
         height: 100vh;
+}
+
+#profiletab {
+  background-color: #B5948D!important;
+
 }
 
 .loginbutton {
