@@ -71,8 +71,8 @@
                                         <button type="submit" class="btn-lg loginbutton mt-3 w-100">Login</button>
                                     </div>
                                     <div class="col-6">
-                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100"><p href="./register.php">New Here?
-                                            Register</p></button>
+                                        <button type="submit" class="btn-lg loginbutton mt-3 w-100"><a href="./register.php">New Here?
+                                            Register</a></button>
                                     </div>
                                 </div>
                         </div>

@@ -38,14 +38,60 @@
         <section id="mainhomepage">
             <div class="row">
 
-                <div class="col-3">
-                <img src="https://proficon.stablenetwork.uk/api/identicon/2.svg" alt="Profile Pic" />
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://proficon.stablenetwork.uk/api/identicon/2.svg" alt="Profile Pic"
+                                style="max-width:100px;" />
+
+                        </div>
+                        <div class="col-7">
+                            <h1 id="textmain" class="display-6">Lewis Westcott</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-1">
+                        <p class="lead" style="color: white!important;">Birthday📆: 29 January 2002</p>
+                        <p class="lead" style="color: white!important;">Join Date🎂: 30 December 2022</p>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button-lg" class="btn loginbutton">Account Settings</button>
+                            <button type="button-lg" class="btn loginbutton">Logout</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="card mx-1 mt-1">
+                        <form>
+                            <div class="card-body">
+                                <h5 class="card-title">New Post</h5>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn loginbutton" type="button">Post✅</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card mx-1 mt-1">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/2.svg"
+                                    alt="Profile Pic" style="max-width:25px;" /> Lewis Westcott</h5>
+                            <p class="card-text">I think the functionality is excellent. I recieved no help whatsoever.</p>
+                            <p class="card-text"><small class="text-muted">Posted 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card mx-1 mt-1">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/jackkimmins.svg"
+                                    alt="Profile Pic" style="max-width:25px;" /> Jack Kimmins</h5>
+                            <p class="card-text">I love fuckbook!!😀</p>
+                            <p class="card-text"><small class="text-muted">Posted 1 day ago</small></p>
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="col-9">
-
-                </div>
 
 
 

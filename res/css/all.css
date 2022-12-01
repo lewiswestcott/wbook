@@ -40,6 +40,10 @@ body {
 
 }
 
+#textmain{
+  color: white;
+}
+
 .loginbutton {
     color: white !important;
     background-color: #084c61 !important;
