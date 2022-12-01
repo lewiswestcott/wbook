@@ -18,7 +18,7 @@ $SQL = "INSERT INTO `users`(`UID`, `firstname`, `lastname`, `dob`, `email`, `pas
 //Prepares the SQL statement for execution.
 $stmt = mysqli_prepare($connect, $SQL);
 
-mysqli_stmt_bind_param($stmt, 'sssss', $_POST["first"], $_POST["last"], $_POST["dob"], $_POST["email"], ($passwordhash));
+mysqli_stmt_bind_param($stmt, 'sssss', $_POST["firstname"], $_POST["lastname"], $_POST["dob"], $_POST["email"], ($passwordhash));
 
 //Executes the prepared query.
 if (mysqli_stmt_execute($stmt))

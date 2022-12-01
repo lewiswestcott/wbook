@@ -1,5 +1,16 @@
 <?php $profilepic="SELECT* FROM `users` WHERE `UID` = '2'"; ?>
 
+<?php
+
+    session_start();
+
+    if (!isset($_SESSION['UID']))
+    {
+        header("Location: ./login.php");
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -46,12 +57,12 @@
 
                         </div>
                         <div class="col-7">
-                            <h1 id="textmain" class="display-6">Lewis Westcott</h1>
+                            <h1 id="textmain" class="display-6"><?php $_SESSION['firstname']?>  <?php $_SESSION['lastname'] ?> </h1>
                         </div>
                     </div>
                     <div class="col-12 mt-1">
-                        <p class="lead" style="color: white!important;">Birthday📆: 29 January 2002</p>
-                        <p class="lead" style="color: white!important;">Join Date🎂: 30 December 2022</p>
+                        <p class="lead" style="color: white!important;">Birthday📆: <?php $_SESSION['dob'] ?> </p>
+                        <p class="lead" style="color: white!important;">Join Date🎂: <?php $_SESSION['joindate'] ?></p>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button type="button-lg" class="btn loginbutton">Account Settings</button>
                             <button type="button-lg" class="btn loginbutton">Logout</button>

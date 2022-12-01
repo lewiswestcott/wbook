@@ -59,7 +59,7 @@
                                         <label for="first">
                                             <p class="secondary mx-1">First Name</p>
                                         </label>
-                                        <input type="text" name="first" class="form-control" id="first"
+                                        <input type="text" name="firstname" class="form-control" id="firstname"
                                             aria-describedby="first" placeholder="First Name">
 
                                     </div>
@@ -67,7 +67,7 @@
                                         <label for="last">
                                             <p class="secondary mx-1">Last Name</p>
                                         </label>
-                                        <input type="text" class="form-control" name="last" id="last"
+                                        <input type="text" class="form-control" name="lastname" id="last"
                                             aria-describedby="last" placeholder="Last Name">
 
                                     </div>
