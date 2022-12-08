@@ -59,7 +59,7 @@
 
                         </div>
                         <div class="col-7">
-                            <h1 id="textmain" class="display-6"><?= $_SESSION['firstname']?>  <?= $_SESSION['lastname'] ?> </h1>
+                            <h1 id="textmain" class="display-6"><?= htmlspecialchars($_SESSION['firstname'])?>  <?= htmlspecialchars($_SESSION['lastname']) ?> </h1>
                         </div>
                     </div>
                     <div class="col-12 mt-1">
@@ -100,7 +100,7 @@
                                 echo '<div class="card mx-1 mt-1">
                                 <div class="card-body">
                                     <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/'.$userrow['UID'].'.svg"
-                                            alt="Profile Pic" style="max-width:25px;" /> '.$userrow['firstname'].' '.$userrow['lastname'].'</h5>
+                                            alt="Profile Pic" style="max-width:25px;" /> '.htmlspecialchars($userrow['firstname']).' '.htmlspecialchars($userrow['lastname']).'</h5>
                                     <p class="card-text">'.htmlspecialchars($row['post']).'</p>
                                     <p class="card-text"><small class="text-muted">Post# '.$row['PID'].'</small></p>
                                 </div>

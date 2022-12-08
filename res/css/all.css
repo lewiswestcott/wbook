@@ -35,6 +35,11 @@ body {
         height: 100vh;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 #profiletab {
   background-color: #B5948D!important;
 
