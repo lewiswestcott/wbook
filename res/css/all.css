@@ -28,6 +28,15 @@
 
 }
 
+.me {
+  color: #084c61;
+  text-decoration: none;  
+}
+
+.me:hover {
+  color: #B5948D;
+}
+
 body {
         background-color: #B5948D;
         /* background: linear-gradient(-45deg, #F2D2BD, #E5D2C4, #CCB3A3, #B5948D); */

@@ -45,7 +45,7 @@
                 <div class="col-7 ">
                     <div class="card mb-2 shadow">
                         <div class="card-body">
-                            <p class="tri">Welcome to wbook! A Social Network created with love by <a
+                            <p class="tri">Welcome to wbook! A Social Network created with love by <a class="me"
                                     href="https://www.lewiswestcott.uk">Lewis Westcott</a> in Weston-super-Mare,
                                 England. </p>
                             <img src="./res/img/Capture.PNG" style="max-width: 100%;" class="rounded shadow-lg">
