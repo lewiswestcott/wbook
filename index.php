@@ -78,7 +78,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">New Post</h5>
                                 <div class="mb-3">
-                                    <textarea class="form-control" name="post" id="post" rows="3"></textarea>
+                                    <textarea class="form-control" required name="post" id="post" rows="3"></textarea>
                                 </div>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button class="btn loginbutton" type="submit">Post✅</button>
