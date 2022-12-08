@@ -6,6 +6,7 @@
     $password = "Minicooper08!";
 
     $connect = mysqli_connect($host, $username, $password, $database);
+    $connect->set_charset("utf8mb4");
 
     if (!$connect)
     {
