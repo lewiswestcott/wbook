@@ -94,11 +94,14 @@
                         $resultCheck = mysqli_num_rows($result);
                         if ($resultCheck > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
+                                $usercheck = "SELECT * FROM `users` WHERE `UID` = '".$row['UID']."'";
+                                $userresult = mysqli_query($connect, $usercheck);
+                                $userrow = mysqli_fetch_assoc($userresult);
                                 echo '<div class="card mx-1 mt-1">
                                 <div class="card-body">
-                                    <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/'.$_SESSION['UID'].'.svg"
-                                            alt="Profile Pic" style="max-width:25px;" /> '.$_SESSION['firstname'].' '.$_SESSION['lastname'].'</h5>
-                                    <p class="card-text">'.$row['post'].'</p>
+                                    <h5 class="card-title"><img src="https://proficon.stablenetwork.uk/api/identicon/'.$userrow['UID'].'.svg"
+                                            alt="Profile Pic" style="max-width:25px;" /> '.$userrow['firstname'].' '.$userrow['lastname'].'</h5>
+                                    <p class="card-text">'.htmlspecialchars($row['post']).'</p>
                                     <p class="card-text"><small class="text-muted">Post# '.$row['PID'].'</small></p>
                                 </div>
                             </div>';

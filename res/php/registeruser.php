@@ -8,7 +8,6 @@ if (!isset($_POST))
 }
 
 require("connect.php");
-var_dump($_POST);
 //The SQL statement
 $password = $_POST["password"];
 $passwordhash = password_hash($password, PASSWORD_BCRYPT);
@@ -23,7 +22,7 @@ mysqli_stmt_bind_param($stmt, 'sssss', $_POST["firstname"], $_POST["lastname"], 
 //Executes the prepared query.
 if (mysqli_stmt_execute($stmt))
 {
-    echo "User Created";
+    header ("Location: ../../index.php");
 }
 else
 {
